@@ -1,0 +1,5 @@
+name: Freebuild
+version: 0.1
+author: q96, Max
+main: de.marv.freebuild.main.Main
+commands:
