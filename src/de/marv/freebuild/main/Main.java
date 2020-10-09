@@ -15,6 +15,7 @@ public class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         System.out.println(Data.prefix + "§aDas Plugin wurde erfolgreich aktiviert");
+        init();
     }
 
     @Override

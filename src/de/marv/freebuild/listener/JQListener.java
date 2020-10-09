@@ -11,12 +11,12 @@ public class JQListener implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent e) {
         Player p = e.getPlayer();
-        e.setJoinMessage("§8[§a+§8] §8» §a" + p.getDisplayName());
+        e.setJoinMessage("§8[§a+§8] §8» §a" + p.getName());
     }
 
     @EventHandler
     public void onLeave(PlayerQuitEvent e) {
         Player p = e.getPlayer();
-        e.setQuitMessage("§8[§c-§8] §8» §a" + p.getDisplayName());
+        e.setQuitMessage("§8[§c-§8] §8» §a" + p.getName());
     }
 }
