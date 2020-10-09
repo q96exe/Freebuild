@@ -16,7 +16,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="spigot" level="project" />
-    <orderEntry type="library" name="OmelsAPI" level="project" />
+    <orderEntry type="library" name="API" level="project" />
+    <orderEntry type="library" name="spigot-1.8.8-R0.1-SNAPSHOT-latest" level="project" />
   </component>
 </module>
