@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class GlobalMute_CMD implements CommandExecutor, Listener {
 
-    boolean globalmute = true;
+    boolean globalmute = false;
     ArrayList<String> mute = new ArrayList<String>();
 
 
@@ -23,11 +23,13 @@ public class GlobalMute_CMD implements CommandExecutor, Listener {
         Player p = (Player) sender;
         if(p.hasPermission("freebuid.globalmute")) {
             if(globalmute = false) {
+                globalmute = true;
                 p.sendMessage(Data.prefix + "§7Du hast den §aGlobalmute §aAktiviert");
                 for(Player all : Bukkit.getOnlinePlayers()) {
                     all.sendMessage(Data.prefix + "§7Der §7Spieler §a" + sender.getName() + " §7hat den Globalmute §aAktiviert");
                 }
             } else if(globalmute = true) {
+                globalmute = false;
                 p.sendMessage(Data.prefix + "§7Du hast den §aGlobalmute §cDeaktiviert");
                 for(Player all : Bukkit.getOnlinePlayers()) {
                     all.sendMessage(Data.prefix + "§7Der §7Spieler §a" + sender.getName() + " §7hat den Globalmute §cDeaktiviert");
