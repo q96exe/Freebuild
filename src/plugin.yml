@@ -3,3 +3,4 @@ version: 0.1
 author: q96, MxdeBySpigot
 main: de.marv.freebuild.main.Main
 commands:
+   Globalmute:

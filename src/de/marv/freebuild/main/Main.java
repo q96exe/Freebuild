@@ -1,5 +1,6 @@
 package de.marv.freebuild.main;
 
+import de.marv.freebuild.commands.GlobalMute_CMD;
 import de.marv.freebuild.listener.JQListener;
 import de.marv.freebuild.utils.Data;
 import org.bukkit.Bukkit;
@@ -25,6 +26,7 @@ public class Main extends JavaPlugin {
 
     public void init() {
         //COMMANDS
+        getCommand("globalmute").setExecutor(new GlobalMute_CMD());
 
         //EVENTS
         Bukkit.getPluginManager().registerEvents(new JQListener(), this);
