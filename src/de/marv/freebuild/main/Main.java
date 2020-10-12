@@ -30,6 +30,7 @@ public class Main extends JavaPlugin {
 
         //EVENTS
         Bukkit.getPluginManager().registerEvents(new JQListener(), this);
+        Bukkit.getPluginManager().registerEvents(new GlobalMute_CMD(), this);
 
     }
 
