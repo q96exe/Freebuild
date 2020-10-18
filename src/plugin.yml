@@ -4,3 +4,7 @@ author: q96, MxdeBySpigot
 main: de.marv.freebuild.main.Main
 commands:
    Globalmute:
+   Fly:
+   gamemode:
+   gm:
+   mute:
